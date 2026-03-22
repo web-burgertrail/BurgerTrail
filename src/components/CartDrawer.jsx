@@ -112,10 +112,13 @@ export default function CartDrawer() {
                 )}
               </AnimatePresence>
 
-              {/* You may also like */}
+              {/* Also Craving section */}
               {items.length > 0 && suggestions.length > 0 && (
                 <div className="pt-3">
-                  <p className="text-white/40 text-xs font-heading tracking-widest uppercase mb-3">You may also like</p>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-sm">🔥</span>
+                    <p className="text-orange-primary text-xs font-heading tracking-widest uppercase font-semibold">Also Craving?</p>
+                  </div>
                   <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-2">
                     {suggestions.map(item => (
                       <SuggestedItem key={item.id} item={item} onAdd={addItem} />
