@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 
 const CATEGORY_ICONS = {
+  all: '🍽️',
   burgers: '🍔',
   wraps: '🌯',
   pizza: '🍕',
